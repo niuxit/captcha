@@ -35,7 +35,7 @@ body{
 .captcha_state .state_container .captcha_logo{
     width: 30px;
     height: 30px;
-    background-image: url(../imgs/html/logo.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/logo.png);
     background-size: 100%;
 }
 .captcha_state.cancle .state_container .captcha_tip{
@@ -101,7 +101,7 @@ body{
     top: 0;
 }
 .captcha_main .captcha_loading .animate{
-    background-image: url(../imgs/html/loading.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/loading.svg);
     width: 60px;
     height: 60px;
     background-size: 100%;
@@ -144,7 +144,7 @@ body{
     position: relative;
 }
 .captcha_main .top_main .captcha_logo{
-    background-image: url(../imgs/html/logo.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/logo.png);
     width: 40px;
     height: 40px;
     margin: 0;
@@ -208,7 +208,7 @@ body{
 .captcha_main .captcha_progress .captcha_line .captcha_tip .right_ico{
     height: 40px;
     width: 15px;
-    background-image: url(../imgs/html/right.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/right.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -219,7 +219,7 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-image: url(../imgs/html/drag.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/drag.svg);
     /* bottom: -10px; */
     background-size: 100%;
     cursor: pointer;
@@ -279,9 +279,9 @@ body{
     margin-left: 5px;
 }
 .captcha_main .captcha_bottom .btns .captcha_refresh{
-    background-image: url(../imgs/html/refresh.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/refresh.svg);
 }
 .captcha_main .captcha_bottom .btns .captcha_close{
-    background-image: url(../imgs/html/close.svg);
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/close.svg);
     z-index: 9999;
 }
