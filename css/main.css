@@ -226,7 +226,7 @@ body{
     border: 0;
     outline: 0;
     padding: 0;
-    /* background-color: #03A9F4; */
+    left:0;
 }
 .captcha_main .captcha_bottom{
     height: 34px;
@@ -258,7 +258,7 @@ body{
     50% {margin-left: 0px;}
     100% {margin-left: -5px;}
 }
-.captcha_main .captcha_bottom .btns{
+.captcha_main .captcha_bottom .captcha_btns{
     display: inline-block;
     height: 100%;
     width: 40%;
@@ -268,7 +268,7 @@ body{
     z-index: 999;
     position: relative;
 }
-.captcha_main .captcha_bottom .btns div{
+.captcha_main .captcha_bottom .captcha_btns div{
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -278,10 +278,10 @@ body{
     vertical-align: middle;
     margin-left: 5px;
 }
-.captcha_main .captcha_bottom .btns .captcha_refresh{
+.captcha_main .captcha_bottom .captcha_btns .captcha_refresh{
     background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/refresh.svg);
 }
-.captcha_main .captcha_bottom .btns .captcha_close{
+.captcha_main .captcha_bottom .captcha_btns .captcha_close{
     background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/close.svg);
     z-index: 9999;
 }
