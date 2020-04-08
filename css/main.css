@@ -48,7 +48,7 @@ body{
     margin-left: 5px;
     background: 0;
     border: 0;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     outline: 0;
     /* color: #009688; */
@@ -190,11 +190,12 @@ body{
 }
 .captcha_main .captcha_progress .captcha_line{
     background: rgba(237, 237, 237, 0.6);
-    height: 45px;
+    height: 100%;
     top: 0;
     position: absolute;
     width: 100%;
     border-radius: 50px;
+    overflow: hidden;
 }
 .captcha_main .captcha_progress .captcha_line .captcha_tip{
     position: absolute;
@@ -203,8 +204,10 @@ body{
     color: #474747;
     left: 52px;
     pointer-events: none;
+    overflow: hidden;
+    font-size: 13px;
 }
-.captcha_main .captcha_progress .captcha_line .captcha_tip>*{display: inline-block;vertical-align: top;/* height: 100%; */color: #767676;}
+.captcha_main .captcha_progress .captcha_line .captcha_tip>*{display: inline-block;vertical-align: middle;height: 100%;color: #767676;}
 .captcha_main .captcha_progress .captcha_line .captcha_tip .right_ico{
     height: 45px;
     width: 15px;
@@ -213,6 +216,17 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     opacity: .6;
+    vertical-align: middle;
+}
+.captcha_main .captcha_progress .captcha_line .captcha_btn_bg{
+    height: 100%;
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: rgba(8, 172, 15, 0.3);
+    border-radius: 50px;
+    border: 1px solid rgba(8, 172, 15, 1);
 }
 .captcha_main .captcha_progress .captcha_line .captcha_btn{
     position: absolute;
@@ -221,12 +235,18 @@ body{
     border-radius: 50%;
     background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@latest/imgs/html/drag.svg);
     /* bottom: -10px; */
-    background-size: 100%;
+    background-size: 54px;
+    background-position: center;
     cursor: pointer;
     border: 0;
     outline: 0;
     padding: 0;
     left:0;
+    top: 0;
+    transition: background ease .3s;
+}
+.captcha_main .captcha_progress .captcha_line .captcha_btn:hover{
+    background-image: url(https://cdn.jsdelivr.net/gh/niuxit/captcha@1.2.3/imgs/html/drag_hover.svg);
 }
 .captcha_main .captcha_bottom{
     height: 34px;
@@ -237,12 +257,15 @@ body{
 .captcha_main .captcha_bottom .captcha_msg{
     height: 100%;
     display: inline-block;
-    width: 60%;
+    width: 70%;
     vertical-align: middle;
-    padding: 0 5px;
+    padding: 0;
     color: #fff;
     position: relative;
     pointer-events: none;
+    font-size: 13px;
+    line-height: 34px;
+    overflow: hidden;
 }
 .captcha_main .captcha_bottom .captcha_msg .captcha_text{
     height: 30px;
@@ -261,7 +284,7 @@ body{
 .captcha_main .captcha_bottom .captcha_btns{
     display: inline-block;
     height: 100%;
-    width: 40%;
+    width: 30%;
     vertical-align: middle;
     text-align: right;
     padding: 0 5px;
