@@ -169,7 +169,7 @@ body{
     display: inline-block;
     width: 120px;
     margin: auto;
-    /* background: #000; */
+    background-color: rgba(255, 255, 255, 0);
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
