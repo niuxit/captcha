@@ -85,7 +85,7 @@ body{
     width: 100%;
     z-index: -1;
     /* filter: blur(8px); */
-    filter: brightness(85%) blur(2px);
+    filter: brightness(85%) blur(0px);
 }
 .captcha_main .captcha_bg .captcha_inner{
     width: 100%;
